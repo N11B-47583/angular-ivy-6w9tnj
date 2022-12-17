@@ -1,4 +1,12 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<hello name="{{ name}}"></hello>
+<!--<router-outlet></router-outlet> w tym miejscu dynamiczne routingi-->
+<!--nowy modul osobny na routting <const router: Routes : [{path: 'list', component: ListComponent}];<
+<!-- Start editing to see some magic happen :) -->
+  <p>{{myProperty}}</p>
+  <p [innerHTML] = "myProperty"></p>
+
+  <input type="text" [(ngModel)]="myText"><button> Dodaj</button><br><br>
+  {{myText}}
+  <br><br>
+  <!--<input type="text" [value]="myText" (input) = "myText=$event.target.value">-->
+<p> {{date | date:"YYYY-MM-dd"}}</p>

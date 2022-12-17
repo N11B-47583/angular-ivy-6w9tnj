@@ -7,4 +7,10 @@ import { Component, VERSION } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular ' + VERSION.major;
+
+  myProperty = "<strong>Hello</strong>, What's up?<script>alert('kuku!)</script>";
+  myText = "sample text no. 1"
+
+  date = new Date()
+  
 }
